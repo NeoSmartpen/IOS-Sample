@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   note_pui_info.plist
+   n2sample
+
+   Created by Louis Park on 21/10/2015.
+   Copyright (c) 2015 Neolab. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+	<key>601</key>
+       <array>
+		<dict>
+			<key>pageNumber</key>
+			<integer>1</integer>
+			<key>activeStartX</key>
+			<real>36.0</real>
+			<key>activeStartY</key>
+			<real>8.6</real>
+			<key>activeWidth</key>
+			<real>2.0</real>
+			<key>activeHeight</key>
+			<real>2.0</real>
+			<key>cmd</key>
+			<string>Email</string>
+		</dict>
+       </array>
+	<key>603</key>
+	<array>
+		<dict>
+			<key>pageNumber</key>
+			<integer>1</integer>
+			<key>activeStartX</key>
+			<real>61.9</real>
+			<key>activeStartY</key>
+			<real>8.5</real>
+			<key>activeWidth</key>
+			<real>2.5</real>
+			<key>activeHeight</key>
+			<real>2</real>
+			<key>cmd</key>
+			<string>Email</string>
+		</dict>
+		<dict>
+			<key>pageNumber</key>
+			<integer>2</integer>
+			<key>activeStartX</key>
+			<real>9.5</real>
+			<key>activeStartY</key>
+			<real>8.5</real>
+			<key>activeWidth</key>
+			<real>2.5</real>
+			<key>activeHeight</key>
+			<real>2</real>
+			<key>cmd</key>
+			<string>Email</string>
+		</dict>
+		
+	</array>
+	<key>114</key>
+       <array>
+		<dict>
+			<key>pageNumber</key>
+			<integer>1</integer>
+			<key>activeStartX</key>
+			<real>32.25</real>
+			<key>activeStartY</key>
+			<real>5.78</real>
+			<key>activeWidth</key>
+			<real>3.6</real>
+			<key>activeHeight</key>
+			<real>2.9</real>
+			<key>cmd</key>
+			<string>Email</string>
+		</dict>
+       </array>
+</dict>
+</plist>

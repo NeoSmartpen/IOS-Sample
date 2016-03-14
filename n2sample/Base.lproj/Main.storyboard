@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="InitVC" id="vXZ-lx-hvc" customClass="NJViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Not connected." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9X-Iy-Nlr">
+                                <rect key="frame" x="20" y="235" width="280" height="122"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="statusMessage" destination="X9X-Iy-Nlr" id="Uve-SK-AeW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Change Password View Controller-->
+        <scene sceneID="LuE-a6-FwL">
+            <objects>
+                <viewController storyboardIdentifier="changePWVC" id="XGT-er-RNg" customClass="NJChangePasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RCX-fq-v1Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="KA5-yP-mqi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3eM-7u-lUx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40C-aK-5LR" userLabel="View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oso-Iu-xt1">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Change Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caa-1A-Qdr">
+                                        <rect key="frame" x="0.0" y="45" width="320" height="24"/>
+                                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dk-d7-64j">
+                                        <rect key="frame" x="0.0" y="85" width="320" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please enter your new password." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="18V-Wi-SuO">
+                                        <rect key="frame" x="0.0" y="85" width="320" height="53"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field_settings_empty.png" highlightedImage="field_settings_fill.png" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-8L-TgN">
+                                        <rect key="frame" x="105" y="164" width="15" height="14"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field_settings_empty.png" highlightedImage="field_settings_fill.png" translatesAutoresizingMaskIntoConstraints="NO" id="q43-ol-wNl">
+                                        <rect key="frame" x="137" y="164" width="15" height="14"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field_settings_empty.png" highlightedImage="field_settings_fill.png" translatesAutoresizingMaskIntoConstraints="NO" id="rAn-sY-Aqz">
+                                        <rect key="frame" x="169" y="164" width="14" height="14"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field_settings_empty.png" highlightedImage="field_settings_fill.png" translatesAutoresizingMaskIntoConstraints="NO" id="ABk-SF-ZSY">
+                                        <rect key="frame" x="201" y="164" width="15" height="14"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDf-nK-Cv1">
+                                        <rect key="frame" x="27" y="205" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_1_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="ph7-42-Ygq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dh0-yi-5Pg">
+                                        <rect key="frame" x="121" y="205" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_2_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="XLU-0Y-Ekh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mG4-tY-V1K">
+                                        <rect key="frame" x="215" y="205" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_3_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="JA2-LJ-bNo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRY-CQ-WPM">
+                                        <rect key="frame" x="27" y="296" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_4_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="Rgh-c4-GCV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Com-IZ-EMs">
+                                        <rect key="frame" x="121" y="296" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_5_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="VBb-UO-I6I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xze-qJ-L63">
+                                        <rect key="frame" x="215" y="296" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_6_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="sbR-6E-OYX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCo-IT-D4H">
+                                        <rect key="frame" x="27" y="389" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_7_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="Fol-Lo-26W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgY-ki-TCf">
+                                        <rect key="frame" x="121" y="389" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_8_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="5da-hA-X4n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddl-8t-UG4">
+                                        <rect key="frame" x="215" y="389" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_9_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="B2G-n5-4fa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIv-KJ-BF9">
+                                        <rect key="frame" x="121" y="479" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_0_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="gya-Vz-VEC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzZ-tk-eFa">
+                                        <rect key="frame" x="215" y="479" width="79" height="79"/>
+                                        <state key="normal" image="settings_backspace.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backSpacePressed:" destination="XGT-er-RNg" eventType="touchUpInside" id="h6B-4I-XIQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backSpace" destination="gzZ-tk-eFa" id="jBx-SF-YHW"/>
+                        <outlet property="numberBtn0" destination="mIv-KJ-BF9" id="kvW-I7-WA8"/>
+                        <outlet property="numberBtn1" destination="cDf-nK-Cv1" id="cFd-7l-qg5"/>
+                        <outlet property="numberBtn2" destination="Dh0-yi-5Pg" id="qRI-V9-5dZ"/>
+                        <outlet property="numberBtn3" destination="mG4-tY-V1K" id="fpM-t2-1ZN"/>
+                        <outlet property="numberBtn4" destination="kRY-CQ-WPM" id="YYG-Bn-smA"/>
+                        <outlet property="numberBtn5" destination="Com-IZ-EMs" id="uec-DT-uA9"/>
+                        <outlet property="numberBtn6" destination="Xze-qJ-L63" id="tJf-Hk-8pa"/>
+                        <outlet property="numberBtn7" destination="BCo-IT-D4H" id="aMt-bX-UZq"/>
+                        <outlet property="numberBtn8" destination="vgY-ki-TCf" id="kJe-08-svM"/>
+                        <outlet property="numberBtn9" destination="ddl-8t-UG4" id="EdQ-Ra-jiK"/>
+                        <outlet property="numberDot1" destination="xfd-8L-TgN" id="yWZ-Y6-6Pe"/>
+                        <outlet property="numberDot2" destination="q43-ol-wNl" id="WAv-pd-s93"/>
+                        <outlet property="numberDot3" destination="rAn-sY-Aqz" id="S56-6E-8e4"/>
+                        <outlet property="numberDot4" destination="ABk-SF-ZSY" id="W5H-u9-3Zd"/>
+                        <outlet property="passwordGuide" destination="18V-Wi-SuO" id="tyW-hV-dGe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="km3-2C-W5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="1132"/>
+        </scene>
+        <!--Update View Controller-->
+        <scene sceneID="eiM-hw-xum">
+            <objects>
+                <viewController storyboardIdentifier="FWUpdateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XdS-mQ-KeE" customClass="NJFWUpdateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N6N-EH-sdK"/>
+                        <viewControllerLayoutGuide type="bottom" id="dco-uA-Pdn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vey-K7-F4g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="uEx-gI-NTd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Firmware Update" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF0-gd-5lX">
+                                <rect key="frame" x="66" y="45" width="188" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_navidrawer.png" translatesAutoresizingMaskIntoConstraints="NO" id="ob0-C0-96c" userLabel="line_top">
+                                <rect key="frame" x="0.0" y="81" width="320" height="1"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Version:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIR-M3-djl">
+                                <rect key="frame" x="59" y="104" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="v.--.--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWb-9U-L9B">
+                                <rect key="frame" x="184" y="105" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A5m-JS-9Oa" userLabel="View -progress view">
+                                <rect key="frame" x="0.0" y="145" width="320" height="95"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKu-PK-7nN">
+                                        <rect key="frame" x="32" y="47" width="256" height="2"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Downloading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dT-PZ-dMo">
+                                        <rect key="frame" x="32" y="4" width="256" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Bo6-Ch-9Gs">
+                                <rect key="frame" x="142" y="265" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="Bo6-Ch-9Gs" id="cnO-e8-qgE"/>
+                        <outlet property="penVersionLabel" destination="tWb-9U-L9B" id="D2p-jb-jjf"/>
+                        <outlet property="progressBar" destination="xKu-PK-7nN" id="47f-7j-a2b"/>
+                        <outlet property="progressView" destination="A5m-JS-9Oa" id="Skq-4l-uNz"/>
+                        <outlet property="progressViewLabel" destination="7dT-PZ-dMo" id="uw5-Ng-gGR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAR-bP-bbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="1132"/>
+        </scene>
+        <!--Input Password View Controller-->
+        <scene sceneID="zaw-EQ-yih">
+            <objects>
+                <viewController storyboardIdentifier="inputPWVC" id="peZ-4J-ymp" customClass="NJInputPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5qn-Bj-kdD"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Nh-wP-6Mm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eeH-fd-Swu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2VB-g9-QbD" userLabel="View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_settings.png" translatesAutoresizingMaskIntoConstraints="NO" id="ate-ae-iAz">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Input Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e59-p0-aLd">
+                                        <rect key="frame" x="0.0" y="45" width="320" height="24"/>
+                                        <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpT-Hr-79e">
+                                        <rect key="frame" x="0.0" y="85" width="320" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please enter your pen password." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sl4-WB-Iue">
+                                        <rect key="frame" x="0.0" y="85" width="320" height="53"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field_settings_empty.png" highlightedImage="field_settings_fill.png" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-n6-CpK">
+                                        <rect key="frame" x="105" y="164" width="15" height="14"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field_settings_empty.png" highlightedImage="field_settings_fill.png" translatesAutoresizingMaskIntoConstraints="NO" id="cNe-4w-gqf">
+                                        <rect key="frame" x="137" y="164" width="15" height="14"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field_settings_empty.png" highlightedImage="field_settings_fill.png" translatesAutoresizingMaskIntoConstraints="NO" id="Alf-YC-sR2">
+                                        <rect key="frame" x="169" y="164" width="14" height="14"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field_settings_empty.png" highlightedImage="field_settings_fill.png" translatesAutoresizingMaskIntoConstraints="NO" id="CTO-o4-uCP">
+                                        <rect key="frame" x="201" y="164" width="15" height="14"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0J-el-JZn">
+                                        <rect key="frame" x="27" y="205" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_1_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="bzu-L6-q7e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8P-YW-Jhx">
+                                        <rect key="frame" x="121" y="205" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_2_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="aTG-6V-0xK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dt-0G-bv1">
+                                        <rect key="frame" x="215" y="205" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_3_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="eeU-Fb-sRX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klj-bX-MPY">
+                                        <rect key="frame" x="27" y="296" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_4_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="IW6-iI-tS2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyX-au-LpD">
+                                        <rect key="frame" x="121" y="296" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_5_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="OSq-cD-Xt1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxM-9T-Wzm">
+                                        <rect key="frame" x="215" y="296" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_6_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="BAn-23-jnn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSr-Pe-BAC">
+                                        <rect key="frame" x="27" y="389" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_7_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="MDA-Ed-ufa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mv2-oF-jZ1">
+                                        <rect key="frame" x="121" y="389" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_8_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="4ln-ep-R7J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy2-pG-NMU">
+                                        <rect key="frame" x="215" y="389" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_9_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="mdL-WL-8iQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4f-NO-q6r">
+                                        <rect key="frame" x="121" y="479" width="79" height="79"/>
+                                        <state key="normal" image="settings_number_0_nor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="numberBtnPressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="J6t-Yf-5JI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4s2-En-T7l">
+                                        <rect key="frame" x="215" y="479" width="79" height="79"/>
+                                        <state key="normal" image="settings_backspace.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backSpacePressed:" destination="peZ-4J-ymp" eventType="touchUpInside" id="blo-7F-zkk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backSpace" destination="4s2-En-T7l" id="fTg-s1-pvx"/>
+                        <outlet property="numberBtn0" destination="s4f-NO-q6r" id="fQB-zn-9zF"/>
+                        <outlet property="numberBtn1" destination="w0J-el-JZn" id="N0T-jc-Z7v"/>
+                        <outlet property="numberBtn2" destination="X8P-YW-Jhx" id="sEJ-jh-ab0"/>
+                        <outlet property="numberBtn3" destination="0Dt-0G-bv1" id="7hv-rJ-tvU"/>
+                        <outlet property="numberBtn4" destination="Klj-bX-MPY" id="dQk-Lm-Lo2"/>
+                        <outlet property="numberBtn5" destination="ZyX-au-LpD" id="RH7-LJ-Klx"/>
+                        <outlet property="numberBtn6" destination="xxM-9T-Wzm" id="xZE-zg-xGs"/>
+                        <outlet property="numberBtn7" destination="NSr-Pe-BAC" id="pM8-mU-xLc"/>
+                        <outlet property="numberBtn8" destination="mv2-oF-jZ1" id="7xI-BZ-aIt"/>
+                        <outlet property="numberBtn9" destination="gy2-pG-NMU" id="RUu-IP-35C"/>
+                        <outlet property="numberDot1" destination="SbH-n6-CpK" id="4Pz-kj-JZU"/>
+                        <outlet property="numberDot2" destination="cNe-4w-gqf" id="QbV-PQ-2VO"/>
+                        <outlet property="numberDot3" destination="Alf-YC-sR2" id="u4f-WZ-xwq"/>
+                        <outlet property="numberDot4" destination="CTO-o4-uCP" id="xey-fa-QZI"/>
+                        <outlet property="passwordGuide" destination="sl4-WB-Iue" id="Lac-41-9Qk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9SF-nB-b0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="1132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_settings.png" width="320" height="568"/>
+        <image name="field_settings_empty.png" width="15" height="15"/>
+        <image name="field_settings_fill.png" width="15" height="15"/>
+        <image name="line_navidrawer.png" width="240" height="2"/>
+        <image name="settings_backspace.png" width="79" height="79"/>
+        <image name="settings_number_0_nor.png" width="79" height="79"/>
+        <image name="settings_number_1_nor.png" width="79" height="79"/>
+        <image name="settings_number_2_nor.png" width="79" height="79"/>
+        <image name="settings_number_3_nor.png" width="79" height="79"/>
+        <image name="settings_number_4_nor.png" width="79" height="79"/>
+        <image name="settings_number_5_nor.png" width="79" height="79"/>
+        <image name="settings_number_6_nor.png" width="79" height="79"/>
+        <image name="settings_number_7_nor.png" width="79" height="79"/>
+        <image name="settings_number_8_nor.png" width="79" height="79"/>
+        <image name="settings_number_9_nor.png" width="79" height="79"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
