@@ -49,7 +49,7 @@ extern NSString * NJPageChangedNotification;
     self.strokeRenderedIndex = (int)[self.page.strokes count] - 1;
     // pass nil for bgimage. This will generate bg imgage from pdf
     if (!CGSizeEqualToSize(self.bounds.size,CGSizeZero)) {
-        self.incrementalImage = [self.page drawPageWithImage:nil size:self.bounds];
+        self.incrementalImage = [self.page drawPageWithImage:nil size:self.bounds drawBG:YES opaque:YES];
     }
     
     self.pageChanging = NO;
@@ -121,7 +121,7 @@ extern NSString * NJPageChangedNotification;
             continue;
         }
         self.incrementalImage = [self.page drawStroke:stroke withImage:self.incrementalImage
-                                                  size:self.bounds scale:1.0 offsetX:0.0 offsetY:0.0];
+                                                  size:self.bounds scale:1.0 offsetX:0.0 offsetY:0.0 drawBG:YES opaque:YES];
         NSLog(@"self.incrementalImage:%d", self.incrementalImage? YES:NO);
     }
     self.strokeRenderedIndex = lastIndex;
@@ -133,7 +133,7 @@ extern NSString * NJPageChangedNotification;
 {
     self.strokeRenderedIndex = (int)[self.page.strokes count] - 1;
     
-    UIImage *write_image = [self.page drawPageWithImage:nil size:self.bounds];
+    UIImage *write_image = [self.page drawPageWithImage:nil size:self.bounds drawBG:YES opaque:YES];
     self.incrementalImage = write_image;
     
     self.pageChanging = NO;
